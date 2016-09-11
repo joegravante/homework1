@@ -1,0 +1,86 @@
+<!--this is the html for exercise 2-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="https://use.typekit.net/vrp6voo.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="sfasfasfasf sfasd fasdfsf">
+    <title>Exercise 2</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-exercise2.css">
+
+
+</head>
+<body>
+
+<article>
+
+    <h2>The Building Blocks Of Progressive Web Apps</h2>
+    <p class="article-author"><span class="by">By</span> <a href="#">Ada Rose Edwards</a></p>
+    <hr>
+    <p class="article-date"><img id="timeicon" src="/images/icon-meta-time.svg">September 5th, 2016</p>
+
+
+    <p id="summary">The common wisdom for most companies that set out to build an app is to build a native Android or iOS app, as well as a supporting website. Although there are some good reasons for that, not enough people know about the major advantages of web apps. <strong>Web apps can replace all of the functions of native apps and websites at once.</strong> They are coming more and more to the fore these days, but still not enough people are familiar with them or adopting them.</p>
+    <h3><span class="orange">Further Reading</span> on SmashingMag:</h3>
+    <ul>
+        <li><a class="sitelink" href="#">A Beginner’s Guide To Progressive Web Apps</a></li>
+        <li><a class="sitelink" href="#">Building A First-Class App That Leverages Your Website</a></li>
+        <li><a class="sitelink" href="#">Creating A Complete Web App In Foundation For Apps</a></li>
+    </ul>
+    <p>Here, you will be able to find some do’s and dont’s on how to make a progressive web app, as well as resources for further research. I’ll also go into the various components and support issues surrounding web apps. Although not every browser is friendly to them, there are still some compelling reasons to learn more about this technology.</p>
+    <h3>What Makes A Web App Progressive?</h3>
+    <p>A progressive web app is an umbrella term for certain technologies that go together to produce an app-like experience on the web. For simplicity’s sake, I’ll refer to them simply as web apps from now on.</p>
+    <p>An ideal web app is a web page that has the best aspects of both the web and native apps. It should be fast and quick to interact with, fit the device’s viewport, remain usable offline and be able to have an icon on the home screen.</p>
+    <p>At the same time, it must not sacrifice the things that make the web great, such as the ability to link deep into the app and to use URLs to enable sharing of content. Like the web, it should <strong>work well across platforms</strong> and not focus solely on mobile. It should behave just as well on a desktop computer as in other form factors, lest we risk having another era of unresponsive m.example.com websites.</p>
+    <p>Progressive web apps are not new. Mobile browsers have had the ability to bookmark a website to your phone’s home screen since 2011 (2013 on Chrome Android), with meta tags in the <code>head</code> determining the appearance of the installed web page. The <a href="#" class="sitelink">Financial Times has been using a web app</a> for digital content delivery on mobile devices since 2012.</p>
+    <p>Moving to a web app enabled the Financial Times to use the same app to ship across platforms in a single distribution channel. Back when I was working for the Financial Times, with a single build we were able to support the following:</p>
+    <ul>
+        <li>iOS,</li>
+        <li>Android (4.4+) Chrome,</li>
+        <li>older Android (via a wrapper),</li>
+        <li>Windows 8,</li>
+        <li>BlackBerry,</li>
+        <li>Firefox OS.</li>
+    </ul>
+    <p>That truly achieves “build once, deploy anywhere.”</p>
+    <h3>“But It’s Not In An App Store”</h3>
+    <p>There are some good reasons why supplementing a native app with a website is still standard practice for most major companies. Among them are concerns about browser support and the fact that most users are acclimated to using native apps. I will address these issues in more detail later. Not least of these concerns is how the app will get exposure if it is not in an app store.</p>
+    <figure style="width: 450px;"><img src="http://placehold.it/450x300" alt=""/><br>
+        <figcaption>As popularity decreases, exposure in the store decreases exponentially. (Image: <a href="#">Charles Perry</a>) (<a href="#">View large version</a>)</figcaption>
+    </figure>
+    <p>I would argue that being in an app store has no major advantage because it has been shown that if you are not in the top 0.1% of apps in the app store, you are not getting significant benefit from being there.</p>
+    <p>Users tend to find your apps by first finding your website. If your website is a web app, then they are already at their destination.</p>
+    <p>One of the strengths of a web app is that it enables you to improve engagement by reducing the number of clicks required to re-engage the user between landing on your website and engaging with your app.</p>
+    <p>By having the user “install” your web app by adding it to their home screen, they can continue engaging with your website. When they close down the web browser, the phone will show them where the web app is installed, bringing you back to their awareness.</p>
+    <figure>
+        <img src="http://placehold.it/450x300" alt=""/>
+    </figure>
+    <h3>Background And Current Climate</h3>
+    <p>Modern web apps are based on a new technology called service workers. Service workers are programmable proxies that sit between the user’s tab and the wider Internet. They intercept and rewrite or fabricate network requests to allow very granular caching and offline support.</p>
+    <p>Since the origins of the web app in 2011, which enabled websites to be bookmarked to the home screen, a number of developments have taken place to lay more groundwork for the creation of progressive web apps.</p>
+    <p>Chrome 38 introduced the web app manifest, which is a JSON file that describes the configuration of your web app. This allowed us to remove the configuration from the <code>head</code>.</p>
+    <p>In Chrome 40 (December 2014), service workers started to roll out across Firefox and Chrome. Apple has so far chosen not to implement this feature in Safari as of the time of writing but has it “<a href="#" class="sitelink">under consideration</a>.” The service worker’s function is to simplify the process of bringing an app offline; it also lays the foundation for future app-like features, such as push notifications and background sync.</p>
+    <p>Apps that were built based on the new service workers and the web app manifest became known as progressive web apps.</p>
+    <p>A progressive web app is not the same as the spec. In fact, it started out as a definition of what a web app should be in the era of service workers, given the new technology being built into browsers. Specifically, Chrome uses this definition to trigger an install prompt in the browser when a number of conditions are met. The conditions are that the web app:</p>
+    <ul>
+        <li>has a service worker (requires HTTPS);</li>
+        <li>has a web app manifest file (with at least minimal configuration and with <code>display: "standalone"</code>);</li>
+        <li>has had two distinct visits.</li>
+    </ul>
+    <p>In this case, “progressive” means that the more features the browser supports, the more app-like the experience can be.</p>
+    <p>The prompt to install the web app is currently shown under varying conditions across Opera, Chrome and the Samsung browser.</p>
+    <p>Apple has indicated interest in progressive web apps for iOS, but at the time of writing it still relies on meta tags for web app configuration and the application cache (AppCache) for offline use.</p>
+
+</article>
+
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
